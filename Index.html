@@ -77,3 +77,44 @@
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 </script>
+<button onclick="login()">Sign In</button>
+
+<script>
+  async function login() {
+    const email = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    try {
+      await firebase.auth().signInWithEmailAndPassword(email, password);
+      window.location.href = "dashboard.html";
+    } catch (error) {
+      alert("Login failed: " + error.message);
+    }
+  }
+</script>
+<button onclick="logout()">Logout</button>
+
+<script>
+  function logout() {
+    firebase.auth().signOut().then(() => {
+      window.location.href = "index.html";
+    });
+  }
+</script>
+<button onclick="logout()">Logout</button>
+
+<script>
+  function logout() {
+    firebase.auth().signOut().then(() => {
+      window.location.href = "index.html";
+    });
+  <button onclick="logout()">Logout</button>
+
+<script>
+  function logout() {
+    firebase.auth().signOut().then(() => {
+      window.location.href = "index.html";
+    });
+  }
+</script>
+</script>+m 
