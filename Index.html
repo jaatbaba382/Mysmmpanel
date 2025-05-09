@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RDXN01SMM - Login</title>
+  <style>
+    body {
+      background: #ff69b4;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 400px;
+      margin: 60px auto;
+      background: white;
+      color: black;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    h2 {
+      margin-bottom: 10px;
+    }
+    input {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: hotpink;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: deeppink;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>RDXN01SMM Panel Login</h2>
+    <p><strong>SALE IS LIVE!</strong></p>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <br />
+    <button onclick="login()">Sign In</button>
+  </div>
+
+  <script>
+    function login() {
+      alert("Logged in (demo only)");
+    }
+  </script>
+</body>
+</html>
