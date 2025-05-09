@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>RDXN01SMM - Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: hotpink;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+    h2 {
+      margin-top: 0;
+    }
+    .balance {
+      font-size: 1.4em;
+      margin-bottom: 20px;
+      color: green;
+    }
+    input, select, button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background: hotpink;
+      color: white;
+      border: none;
+    }
+    button:hover {
+      background: deeppink;
+    }
+    .history {
+      margin-top: 30px;
+    }
+    .history ul {
+      list-style: none;
+      padding: 0;
+    }
+    .history li {
+      background: #eee;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>RDXN01SMM Panel</h1>
+</header>
+
+<div class="container">
+  <h2>Welcome, User</h2>
+  <div class="balance">Balance: ₹2,15,000</div>
+
+  <h3>Place New Order</h3>
+  <select>
+    <option>Instagram Followers</option>
+    <option>Instagram Likes</option>
+    <option>YouTube Views</option>
+    <option>Facebook Page Likes</option>
+  </select>
+  <input type="text" placeholder="Enter Username or Link" />
+  <input type="number" placeholder="Quantity" />
+  <button onclick="placeOrder()">Place Order</button>
+
+  <div class="history">
+    <h3>Order History</h3>
+    <ul id="orderList">
+      <li>Instagram Followers - 1000 - Success</li>
+      <li>YouTube Views - 5000 - Pending</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  function placeOrder() {
+    alert("Order Placed (Demo)");
+  }
+</script>
+
+</body>
+</html>
